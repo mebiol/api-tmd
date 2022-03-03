@@ -9,7 +9,7 @@ day = str(date.today())
 dl = datetime.now()
 print(dl.hour)
 
-os.os.makedirs(f'weather_3_hour/{day}', exist_ok=True)
+os.makedirs(f'weather_3_hour/{day}', exist_ok=True)
 
 with open(f'weather_3_hour/{day}/{dl.hour}.json', 'w',encoding = 'utf-8-sig') as f:
     json.dump(response, f, indent=4, ensure_ascii=False)
