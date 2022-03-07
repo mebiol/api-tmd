@@ -3,7 +3,7 @@ import json
 from datetime import date
 import os
 
-with open('secret.json') as json_file:
+with open('secrets.json') as json_file:
     secrets = json.load(json_file)
 
 uid = secrets['uid']
